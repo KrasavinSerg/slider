@@ -1,0 +1,405 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "OpenSans";
+  min-width: 320px;
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #c4cdd6;
+}
+
+.first .button {
+  padding: 16px 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff891e;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.first .button:hover {
+  background-color: #fa993e;
+}
+
+.second {
+  display: none;
+}
+
+.second .carousel__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.second .carousel__item {
+  padding: 105px 0 125px;
+}
+
+.second .carousel__item--1 {
+  background: url("../img/slider_1min.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.second .carousel__item--2 {
+  background: url("../img/slider_2min.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.second .carousel__item--3 {
+  background: url("../img/slider_3min.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.second .carousel__item--4 {
+  background: url("../img/slider_4min.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.second .carousel__title {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+.second .carousel__text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+.second .carousel .button1 {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff891e;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.second .carousel .button1:hover {
+  background-color: #fa993e;
+}
+
+.second .carousel .button2 {
+  display: none;
+  padding: 8px 23px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.second .carousel .button2:hover {
+  background-color: #d5d8db;
+}
+
+.second .carousel .slick-prev {
+  position: absolute;
+  width: 75px;
+  height: 85px;
+  border-style: none;
+  font-size: 0;
+  background-color: transparent;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  outline: none;
+}
+
+.second .carousel .slick-prev:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.second .carousel .slick-prev::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 30px;
+  top: 38px;
+}
+
+.second .carousel .slick-next {
+  position: absolute;
+  width: 75px;
+  height: 85px;
+  font-size: 0;
+  border-style: none;
+  background-color: transparent;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  outline: none;
+}
+
+.second .carousel .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.second .carousel .slick-next::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  right: 30px;
+  top: 38px;
+}
+
+.second .carousel .slick-slide {
+  outline: none;
+}
+
+.second .carousel .slick-dots {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.second .carousel .slick-dots li.slick-active button {
+  background-color: #000000;
+  outline: none;
+}
+
+.second .carousel .slick-dots li button {
+  width: 15px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0;
+  background-color: transparent;
+}
+
+.second .carousel .slick-dots li button:hover {
+  background-color: #000000;
+}
+
+.second .card {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .second {
+    position: relative;
+  }
+  .second .carousel {
+    position: relative;
+  }
+  .second .carousel__item {
+    padding: 235px 0 270px;
+  }
+  .second .carousel__item--1 {
+    background: url("../img/slider_1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .second .carousel__item--2 {
+    background: url("../img/slider_2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .second .carousel__item--3 {
+    background: url("../img/slider_3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .second .carousel__item--4 {
+    background: url("../img/slider_4.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .second .carousel__title {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 35px;
+    text-align: left;
+  }
+  .second .carousel__text {
+    margin-bottom: 12px;
+    font-size: 22px;
+    text-align: left;
+  }
+  .second .carousel .button1 {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 25px;
+  }
+  .second .carousel .button2 {
+    display: inline-block;
+  }
+  .second .slick-prev {
+    position: absolute;
+    width: 75px;
+    height: 85px;
+    border-style: none;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 10;
+  }
+  .second .slick-prev::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    left: 30px;
+    top: 38px;
+  }
+  .second .slick-next {
+    position: absolute;
+    width: 75px;
+    height: 85px;
+    font-size: 0;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .second .slick-next::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    right: 30px;
+    top: 38px;
+  }
+  .second .card {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .second .card .media {
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .second .card a {
+    outline: none;
+  }
+  .second .card img {
+    border-radius: 3px;
+  }
+  .second .card h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .second .card p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .second .carousel__title {
+    font-size: 42px;
+  }
+  .second .carousel__text {
+    font-size: 26px;
+  }
+  .second .carousel .button1 {
+    font-size: 16px;
+  }
+  .second .carousel .button2 {
+    font-size: 16px;
+  }
+  .card h2 {
+    font-size: 11px;
+  }
+  .card p {
+    font-size: 11px;
+  }
+}
